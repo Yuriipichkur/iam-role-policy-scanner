@@ -32,9 +32,15 @@ This tool helps identify specific actions (e.g. iam:CreateRole, iam:DeleteRole, 
 * Required IAM permissions
 
 ## Installation
+```
 git clone https://github.com/Yuriipichkur/iam-role-policy-scanner.git
 cd iam-role-policy-scanner
-pip install -r requirements.txt
+```
+
+## Running
+```
+AWS_PROFILE=YourProfile python3 iam_scanner.py --output csv
+```
 
 ## Roadmap
 * Integration with AWS Organizations

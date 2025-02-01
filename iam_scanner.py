@@ -11,14 +11,6 @@ from typing import List, Dict, Optional
 start_time = time.time()
 
 target_actions = [
-    "rds:CreateDBInstance",
-    "rds:DeleteDBInstance",
-    "rds:CreateDBCluster",
-    "rds:DeleteDBCluster",
-    "rds:*",
-    "elasticache:CreateCacheCluster",
-    "elasticache:DeleteCacheCluster",
-    "elasticache:*",
     "iam:CreateUser",
     "iam:DeleteUser",
     "iam:CreateRole",
