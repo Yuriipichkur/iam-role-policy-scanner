@@ -16,11 +16,11 @@ This tool helps identify specific actions (e.g. iam:CreateRole, iam:DeleteRole, 
 * CLI Integration: Fully compatible with AWS CLI for seamless interaction with AWS resources
 
 ## Output Options
-- *Multiple Formats:
+- Multiple Formats:
   - CSV (for data analysis)
   - JSON (for integration)
   - Text (for readability)
-- *Detailed Results Including:
+- Detailed Results Including:
   - Role/Permission Set details
   - Policy information
   - Matched actions
