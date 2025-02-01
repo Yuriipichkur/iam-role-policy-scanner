@@ -15,30 +15,40 @@ This tool helps identify specific actions (e.g. iam:CreateRole, iam:DeleteRole, 
   * AWS IAM Identity Center permission sets managed policies
 * CLI Integration: Fully compatible with AWS CLI for seamless interaction with AWS resources
 
-## Output
-The script outputs the results in the specified format:
-* For IAM Roles:
-  * Role name and ARN
-  * Policy name and ARN
-  * Corresponding actions
-* For Permission Sets:
-  * Permission set name and ARN
-  * Policy type (inline or managed)
-  * Corresponding actions
+## Output Options
+- *Multiple Formats:
+  - CSV (for data analysis)
+  - JSON (for integration)
+  - Text (for readability)
+- *Detailed Results Including:
+  - Role/Permission Set details
+  - Policy information
+  - Matched actions
+  - Principal relationships
 
-## Key Functions
-* `run_aws_cli`: Executes AWS CLI commands asynchronously and handles JSON output
-* `process_inline_policies`: Analyzes inline policies for target actions
-* `process_attached_policies`: Analyzes attached managed policies for target actions
-* `process_permission_set`: Analyzes permission sets' inline and managed policies
-* `check_actions_in_policy`: Detects target actions in policy documents
+## Prerequisites
+* Python 3.10+
+* AWS CLI configured with appropriate credentials
+* Required IAM permissions
+
+## Installation
+git clone https://github.com/Yuriipichkur/iam-role-policy-scanner.git
+cd iam-role-policy-scanner
+pip install -r requirements.txt
 
 ## Roadmap
-Future improvements may include:
-* Adding support for more actions for AWS services
-* Improving error handling and logging
-* Integrating with AWS Config or AWS Organizations for broader policy analysis
-* Adding support for analyzing permission sets' customer managed policies
-* Implementing filtering and advanced search capabilities for permission sets
+* Integration with AWS Organizations
+* Real-time monitoring capabilities
+* Custom reporting templates
+* Advanced filtering options
+* CI/CD pipeline integration
 
-Contributions are welcome!
+## Recent Updates
+* Added Identity Center (SSO) permission set analysis
+* Improved wildcard pattern matching
+* Enhanced error handling and logging
+* Optimized performance for large-scale environments
+* Added support for permission boundaries
+
+##  Contributing
+Contributions are welcome! Please feel free to submit pull requests, create issues or suggest improvements.
